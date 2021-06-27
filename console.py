@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 """print prompt"""
 """environ cmd"""
+"""print Quit command to exit the program whit help quit NO FUNCIONA AUN"""
 
 
 import cmd
 
 
 class HBNBCommand(cmd.Cmd):
-    """Interprete de comandos"""
+    """command interpreter"""
     prompt = "(hbnb): "
+    """Quit command to exit the program"""
     def do_quit(self, args):
 
         return True
