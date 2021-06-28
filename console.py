@@ -2,7 +2,7 @@
 """print prompt"""
 """environ cmd"""
 """print Quit command to exit the program whit help quit"""
-"""emtyline quhit enter"""
+"""emtyline whit enter"""
 
 import cmd
 
