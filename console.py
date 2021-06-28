@@ -9,15 +9,15 @@ import cmd
 
 class HBNBCommand(cmd.Cmd):
     """command interpreter"""
-    prompt = "(hbnb): "
+    prompt = "(hbnb) "
     """Quit command to exit the program"""
     def do_quit(self, args):
-
+        'Quit command to exit the program'
         return True
 
 
     def do_EOF(Self, args):
-
+        'End Of File'
         return True
 
 
