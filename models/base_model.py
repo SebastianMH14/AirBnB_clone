@@ -8,6 +8,7 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """Initialization of the base model"""
+        id = self.id.uuid.uuid4()
 
         if kwargs:
             self.__dict__ = kwargs
