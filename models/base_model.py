@@ -8,7 +8,7 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """Initialization of the base model"""
-        id = self.id.uuid.uuid4()
+        self.id = self.uuid() # JUAN DUQUE unique id creator
 
         if kwargs:
             self.__dict__ = kwargs
