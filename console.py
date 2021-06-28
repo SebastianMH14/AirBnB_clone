@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """print prompt"""
 """environ cmd"""
-"""print Quit command to exit the program whit help quit NO FUNCIONA AUN"""
+"""print Quit command to exit the program whit help quit"""
 
 
 import cmd
