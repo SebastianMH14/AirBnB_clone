@@ -1,14 +1,14 @@
 #!/usr/bin/python3
+"""
+TestBaseModel - Unittest for base_model
+"""
 import unittest
 from models.base_model import BaseModel
 import pep8
 
-'''
-TestBaseModel - Unittest for base_model
-'''
 
 class TestBaseModel(unittest.TestCase):
-    def test_uuid(self)
+    def test_uuid(self):
         bm1 = BaseModel()
         bm2 = BaseModel()
         self.assertIsInstance(bm1, BaseModel)
