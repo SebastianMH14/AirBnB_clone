@@ -2,9 +2,10 @@
 """Creating a user class"""
 """empty strings"""
 
-class user:
+
+class User:
     """class user"""
-email = ""
-password = ""
-first_name = ""
-last_name= ""
+    email = ""
+    password = ""
+    first_name = ""
+    last_name = ""
