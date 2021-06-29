@@ -8,7 +8,6 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """Initialization of the base model"""
-        
 
         if kwargs:
             self.__dict__ = kwargs
