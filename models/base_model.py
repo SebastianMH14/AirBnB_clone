@@ -35,8 +35,9 @@ class BaseModel:
 
     def to_dict(self):
         """Returns a new dic with the class values"""
-        self.__dict__["__class__"] = __class__.__name__
-        self.__dict__["created_at"] = self.created_at.isoformat()
-        self.__dict__["updated_at"] = self.updated_at.isoformat()
+        copy_dict = self.__dict__.copy()
+        copy_dict["__class__"] = __class__.__name__
+        copy_dict["created_at"] = self.created_at.isoformat()
+        copy_dict["updated_at"] = self.updated_at.isoformat()
 
-        return self.__dict__
+        return copy_dict
