@@ -35,8 +35,9 @@ class FileStorage:
         """deserializes the JSON file to __objects
         (only if the JSON file (__file_path) exists"""
         dic_t = {}
-        with open(self.__file_path) as file:
-            dic_t = json.load(file)
+        if os.path.exists(self.__file_path):
+            with open(self.__file_path) as file:
+                dic_t = json.load(file)
             for k, v in dic_t.items():
                 obj = v["__class__"]
                 self.__objects[k] = locals()[obj](**v)
