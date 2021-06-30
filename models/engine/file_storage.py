@@ -40,4 +40,5 @@ class FileStorage:
                 dic_t = json.load(file)
             for k, v in dic_t.items():
                 obj = v["__class__"]
-                self.__objects[k] = locals()[obj](**v)
+                objs = obj + "(**v)"
+                self.__objects[k] = eval(objs)

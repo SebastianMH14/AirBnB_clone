@@ -15,9 +15,12 @@ class BaseModel:
             for key, value in kwargs.items():
                 if key == "__class__":
                     continue
-                elif key == "create_at" or key == "updated_at":
-                    value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
-                    setattr(self, key, value)
+                elif key == "created_at":
+                    v = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
+                    setattr(self, key, v)
+                elif key == "updated_at":
+                    v = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
+                    setattr(self, key, v)
                 else:
                     setattr(self, key, value)
         else:
@@ -38,9 +41,8 @@ class BaseModel:
 
     def to_dict(self):
         """Returns a new dic with the class values"""
-        copy_dict = self.__dict__.copy()
-        copy_dict["__class__"] = __class__.__name__
-        copy_dict["created_at"] = self.created_at.isoformat()
-        copy_dict["updated_at"] = self.updated_at.isoformat()
+        self.__dict__["__class__"] = __class__.__name__
+        self.__dict__["created_at"] = self.created_at.isoformat()
+        self.__dict__["updated_at"] = self.updated_at.isoformat()
 
-        return copy_dict
+        return self.__dict__
