@@ -12,5 +12,6 @@ class TestBaseModel(unittest.TestCase):
         bm1 = BaseModel()
         bm2 = BaseModel()
         self.assertIsInstance(bm1, BaseModel)
+        self.assertTrue(hasAttribute(bm1, "id"))
         self.assertNotEqual(bm1.id, bm2.id)
         self.assertIsInstance(bm1.id, str)
