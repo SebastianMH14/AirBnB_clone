@@ -26,15 +26,13 @@ class HBNBCommand(cmd.Cmd):
     def do_create(self, args):
         """Creates a new instance of BaseModel,
         saves it (to the JSON file) and prints the id"""
-        clas = ["BaseModel", "Review", "Amenity",
-                "Place", "State", "City", "User"]
         if args:
             args = shlex.split(args)
-            if args == clas:
+            try:
                 new_object = globals()[args[0]]()
                 new_object.save()
                 print(new_object.id)
-            else:
+            except:
                 print("** class doesn't exist **")
         else:
             print("** class name missing **")
