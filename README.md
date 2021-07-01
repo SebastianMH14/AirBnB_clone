@@ -22,6 +22,8 @@ cd AirBnB_clone
 Note: `Preferably use in python3`
 
 
+***
+
 
 ![Image text](https://1000marcas.net/wp-content/uploads/2020/01/Airbnb-logo.jpg)
 
