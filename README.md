@@ -23,7 +23,7 @@ Note: `Preferably use in python3`
 
 
 ***
-![Image text](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210701%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210701T205146Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a4b451a9831bd7fe319b9351d3e055b8df95a752e7a159590568002ade70487a)
+![Image text](https://1000marcas.net/wp-content/uploads/2020/01/Airbnb-logo.jpg)
 
 ## Commands
 ***
