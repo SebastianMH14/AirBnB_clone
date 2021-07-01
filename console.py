@@ -14,7 +14,6 @@ from models.city import City
 from models.amenity import Amenity
 
 
-
 class HBNBCommand(cmd.Cmd):
     """command interpreter"""
     prompt = "(hbnb) "
