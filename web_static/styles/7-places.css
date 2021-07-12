@@ -1,16 +1,16 @@
 .places{
-    position: relative;
+    position: absolute;
     display: flex;
-    flex-wrap: wrap-reverse;
-    top: 50px;
-    left: 50px;
+    flex-wrap: wrap;
+    bottom: 320px;
+    justify-content: center;
 }
 
 .titulo{
     position: relative;
     font-size: 30px;
-    right: 15px;
-    bottom: 180px;
+    right: 185px;
+    bottom: 100px;
 }
 
 .places h2{
@@ -26,5 +26,7 @@ article{
     border-radius: 4px;
     text-align: center;
     position: relative;
-    top: 50px;
+    bottom: 30px;
+    right: 269px;
+    
 }
