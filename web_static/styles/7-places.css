@@ -1,0 +1,30 @@
+.places{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    top: 50px;
+    left: 50px;
+}
+
+.titulo{
+    position: relative;
+    font-size: 30px;
+    right: 15px;
+    bottom: 180px;
+}
+
+.places h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+article{
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid hsl(358, 100%, 68%);
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
