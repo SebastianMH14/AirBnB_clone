@@ -73,7 +73,10 @@ display: flex;
 }
 
 .texto{
+    width: 100%;
     margin-top: 45%;
-    padding-right: 40%;
-    text-align: horizontal;
+}
+
+.description{
+    text-align: left;
 }
